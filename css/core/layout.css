@@ -18,7 +18,7 @@
 }
 
 .section--dark {
-  background-color: var(--color-navy-800);
+  background-color: var(--color-dark-800);
   color: var(--color-gray-100);
 }
 
@@ -29,11 +29,15 @@
 }
 
 .section--dark p {
-  color: var(--color-gray-300);
+  color: var(--color-gray-400);
 }
 
 .section--alt {
   background-color: var(--color-gray-50);
+}
+
+.section--red {
+  background-color: var(--color-primary-50);
 }
 
 .section__header {
@@ -51,13 +55,13 @@
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-bottom: var(--space-4);
-  background-color: var(--color-emerald-100);
-  color: var(--color-emerald-600);
+  background-color: var(--color-primary-100);
+  color: var(--color-primary-600);
 }
 
 .section--dark .section__badge {
-  background-color: rgba(16, 185, 129, 0.15);
-  color: var(--color-emerald-400);
+  background-color: rgba(220, 38, 38, 0.15);
+  color: var(--color-primary-400);
 }
 
 .section__title {

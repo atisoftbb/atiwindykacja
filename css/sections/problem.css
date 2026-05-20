@@ -20,8 +20,8 @@
 }
 
 .problem-card:hover {
-  border-color: var(--color-red-500);
-  box-shadow: 0 4px 20px rgba(239, 68, 68, 0.08);
+  border-color: var(--color-primary-400);
+  box-shadow: 0 4px 20px rgba(220, 38, 38, 0.08);
 }
 
 .problem-card__icon {
@@ -29,8 +29,8 @@
   width: 48px;
   height: 48px;
   border-radius: var(--radius-lg);
-  background: var(--color-red-100);
-  color: var(--color-red-500);
+  background: var(--color-primary-50);
+  color: var(--color-primary-500);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,7 +40,7 @@
 .problem-card__title {
   font-size: var(--text-base);
   font-weight: var(--font-semibold);
-  color: var(--color-navy-800);
+  color: var(--color-dark-900);
   margin-bottom: var(--space-2);
 }
 
@@ -53,14 +53,15 @@
   margin-top: var(--space-12);
   text-align: center;
   padding: var(--space-8);
-  background: linear-gradient(135deg, var(--color-red-100), var(--color-amber-100));
+  background: linear-gradient(135deg, var(--color-primary-50), var(--color-primary-100));
   border-radius: var(--radius-xl);
+  border: 1px solid var(--color-primary-100);
 }
 
 .problem__highlight-number {
   font-size: var(--text-5xl);
   font-weight: var(--font-extrabold);
-  color: var(--color-red-500);
+  color: var(--color-primary-600);
   line-height: 1;
 }
 

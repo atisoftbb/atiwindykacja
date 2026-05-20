@@ -15,14 +15,14 @@
   align-items: center;
   gap: var(--space-6);
   padding: var(--space-6);
-  background: var(--color-navy-700);
+  background: var(--color-dark-700);
   border-radius: var(--radius-xl);
   border: 1px solid rgba(255, 255, 255, 0.06);
   transition: all var(--transition-base);
 }
 
 .integration-card:hover {
-  border-color: rgba(16, 185, 129, 0.3);
+  border-color: rgba(220, 38, 38, 0.4);
   transform: translateX(4px);
 }
 

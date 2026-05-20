@@ -7,12 +7,13 @@
   border-radius: var(--radius-xl);
   padding: var(--space-8);
   border: 1px solid var(--color-gray-200);
-  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
 }
 
 .card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary-300);
 }
 
 .card__icon {
@@ -24,15 +25,15 @@
   justify-content: center;
   font-size: var(--text-2xl);
   margin-bottom: var(--space-5);
-  background-color: var(--color-emerald-100);
-  color: var(--color-emerald-600);
+  background-color: var(--color-primary-50);
+  color: var(--color-primary-600);
 }
 
 .card__title {
   font-size: var(--text-lg);
   font-weight: var(--font-semibold);
   margin-bottom: var(--space-3);
-  color: var(--color-navy-800);
+  color: var(--color-dark-900);
 }
 
 .card__text {
@@ -43,12 +44,12 @@
 
 /* Dark variant */
 .card--dark {
-  background-color: var(--color-navy-700);
+  background-color: var(--color-dark-700);
   border-color: rgba(255, 255, 255, 0.08);
 }
 
 .card--dark:hover {
-  border-color: rgba(16, 185, 129, 0.3);
+  border-color: rgba(220, 38, 38, 0.4);
 }
 
 .card--dark .card__title {
@@ -60,8 +61,8 @@
 }
 
 .card--dark .card__icon {
-  background-color: rgba(16, 185, 129, 0.12);
-  color: var(--color-emerald-400);
+  background-color: rgba(220, 38, 38, 0.12);
+  color: var(--color-primary-400);
 }
 
 /* Stat card */
@@ -73,7 +74,7 @@
 .stat-card__number {
   font-size: var(--text-4xl);
   font-weight: var(--font-extrabold);
-  color: var(--color-emerald-500);
+  color: var(--color-primary-600);
   line-height: 1;
   margin-bottom: var(--space-2);
 }
@@ -94,7 +95,7 @@
 }
 
 .persona-card:hover {
-  border-color: var(--color-emerald-500);
+  border-color: var(--color-primary-500);
   box-shadow: var(--shadow-lg);
 }
 
@@ -107,7 +108,7 @@
   font-size: var(--text-xl);
   font-weight: var(--font-bold);
   margin-bottom: var(--space-3);
-  color: var(--color-navy-800);
+  color: var(--color-dark-900);
 }
 
 .persona-card__benefit {
@@ -134,6 +135,6 @@
   content: "\2713";
   position: absolute;
   left: 0;
-  color: var(--color-emerald-500);
+  color: var(--color-primary-600);
   font-weight: var(--font-bold);
 }

@@ -20,7 +20,7 @@
 .roi__calculator-title {
   font-size: var(--text-xl);
   font-weight: var(--font-bold);
-  color: var(--color-navy-800);
+  color: var(--color-dark-900);
   margin-bottom: var(--space-6);
   text-align: center;
 }
@@ -49,14 +49,14 @@
 
 .roi__input:focus {
   outline: none;
-  border-color: var(--color-emerald-500);
-  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+  border-color: var(--color-primary-500);
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
 }
 
 .roi__result {
   margin-top: var(--space-6);
   padding: var(--space-6);
-  background: linear-gradient(135deg, var(--color-navy-800), var(--color-navy-700));
+  background: linear-gradient(135deg, var(--color-dark-800), var(--color-dark-700));
   border-radius: var(--radius-xl);
   text-align: center;
 }
@@ -70,7 +70,7 @@
 .roi__result-value {
   font-size: var(--text-4xl);
   font-weight: var(--font-extrabold);
-  color: var(--color-emerald-400);
+  color: var(--color-primary-400);
 }
 
 .roi__result-subtext {

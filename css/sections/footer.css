@@ -3,7 +3,7 @@
    ============================================ */
 
 .footer {
-  background: var(--color-navy-900);
+  background: var(--color-dark-900);
   padding: var(--space-12) var(--space-6) var(--space-6);
   border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
@@ -29,7 +29,7 @@
 }
 
 .footer__brand-name span {
-  color: var(--color-emerald-400);
+  color: var(--color-primary-400);
 }
 
 .footer__brand-desc {
@@ -60,7 +60,7 @@
 }
 
 .footer__links a:hover {
-  color: var(--color-emerald-400);
+  color: var(--color-primary-400);
 }
 
 .footer__bottom {
