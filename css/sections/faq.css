@@ -1,0 +1,10 @@
+/* ============================================
+   FAQ Section
+   ============================================ */
+
+/* Uses accordion component styles — this file for section-specific overrides */
+
+.faq__wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}

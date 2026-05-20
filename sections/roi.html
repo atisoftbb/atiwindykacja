@@ -1,0 +1,63 @@
+<section class="section" id="oszczednosci">
+  <div class="container">
+    <div class="section__header">
+      <span class="section__badge">Oszczędności</span>
+      <h2 class="heading-2 section__title">Policz, ile tracisz na ręcznej windykacji</h2>
+      <p class="section__subtitle">
+        Wprowadź swoje dane — zobacz ile możesz zaoszczędzić
+      </p>
+    </div>
+
+    <div class="roi__layout">
+      <!-- Kalkulator -->
+      <div class="roi__calculator reveal">
+        <h3 class="roi__calculator-title">Kalkulator oszczędności</h3>
+
+        <div class="roi__input-group">
+          <label class="roi__label" for="invoicesCount">Ile faktur wystawiasz miesięcznie?</label>
+          <input class="roi__input" type="number" id="invoicesCount" value="100" min="1">
+        </div>
+
+        <div class="roi__input-group">
+          <label class="roi__label" for="overduePercent">Jaki % jest przeterminowany?</label>
+          <input class="roi__input" type="number" id="overduePercent" value="25" min="1" max="100">
+        </div>
+
+        <div class="roi__input-group">
+          <label class="roi__label" for="avgValue">Średnia wartość faktury (PLN)</label>
+          <input class="roi__input" type="number" id="avgValue" value="3000" min="100">
+        </div>
+
+        <div class="roi__result">
+          <div class="roi__result-label">Szacowane roczne oszczędności</div>
+          <div class="roi__result-value" id="roiResult">54 000 zł</div>
+          <div class="roi__result-subtext">
+            + <span id="roiHours">96</span> godzin pracy odzyskanych rocznie
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div>
+        <div class="roi__stats-grid">
+          <div class="stat-card reveal">
+            <div class="stat-card__number" data-count="73">73%</div>
+            <div class="stat-card__label">skuteczność po 1. monicie</div>
+          </div>
+          <div class="stat-card reveal reveal-delay-1">
+            <div class="stat-card__number" data-count="12">12 dni</div>
+            <div class="stat-card__label">szybsze płatności</div>
+          </div>
+          <div class="stat-card reveal reveal-delay-2">
+            <div class="stat-card__number">8h</div>
+            <div class="stat-card__label">zaoszczędzonych miesięcznie</div>
+          </div>
+          <div class="stat-card reveal reveal-delay-3">
+            <div class="stat-card__number">ROI</div>
+            <div class="stat-card__label">zwrot w pierwszym miesiącu</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
