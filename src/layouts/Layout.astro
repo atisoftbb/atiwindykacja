@@ -134,11 +134,15 @@ const asset = (p) => (base.endsWith("/") ? base : base + "/") + p.replace(/^\//,
       const faq = document.getElementById("faq");
       if (faq) {
         const buttons = Array.from(faq.querySelectorAll("button"));
-        const items = buttons.map((btn) => ({
-          btn,
-          ans: btn.nextElementSibling as HTMLElement | null,
-          chev: btn.querySelector("span:last-child") as HTMLElement | null,
-        }));
+        const items = buttons.map((btn) => {
+          // chevron = OSTATNI bezpośredni <span> przycisku (nie wewnętrzny span z tekstem pytania)
+          const directSpans = btn.querySelectorAll(":scope > span");
+          return {
+            btn,
+            ans: btn.nextElementSibling as HTMLElement | null,
+            chev: (directSpans[directSpans.length - 1] as HTMLElement) || null,
+          };
+        });
         const setState = (o: (typeof items)[number], open: boolean) => {
           if (o.ans) o.ans.style.display = open ? "block" : "none";
           if (o.chev) o.chev.textContent = open ? "–" : "+";
