@@ -1,5 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="6" fill="#DC2626"/>
-  <path d="M16 6 L26 16 L16 26 L6 16 Z" fill="none" stroke="white" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M11 16 L14.5 19.5 L21 13" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="AtiWindykacja">
+  <rect width="96" height="96" rx="22" fill="#EE3B34"/>
+  <rect x="20" y="14" width="46" height="60" rx="7" fill="#F7F4ED"/>
+  <rect x="29" y="28" width="28" height="5" rx="2.5" fill="#141414"/>
+  <rect x="29" y="39" width="28" height="5" rx="2.5" fill="#141414" opacity="0.55"/>
+  <rect x="29" y="50" width="18" height="5" rx="2.5" fill="#141414" opacity="0.55"/>
+  <circle cx="62" cy="66" r="20" fill="#141414"/>
+  <path d="M53 66 l6 6 l12 -13" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
 </svg>

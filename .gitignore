@@ -4,3 +4,7 @@ dist/
 .DS_Store
 Thumbs.db
 *.log
+
+# Wewnetrzne materialy robocze (nie publikowac w repo)
+media/
+.vscode/

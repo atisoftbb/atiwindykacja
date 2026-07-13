@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 372 96" fill="none" role="img" aria-label="AtiWindykacja">
+  <rect x="20" y="12" width="46" height="60" rx="7" fill="#EE3B34"/>
+  <rect x="29" y="26" width="28" height="5" rx="2.5" fill="#F7F4ED"/>
+  <rect x="29" y="37" width="28" height="5" rx="2.5" fill="#F7F4ED" opacity="0.55"/>
+  <rect x="29" y="48" width="18" height="5" rx="2.5" fill="#F7F4ED" opacity="0.55"/>
+  <circle cx="62" cy="64" r="20" fill="#141414"/>
+  <path d="M53 64 l6 6 l12 -13" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <text x="92" y="62" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="800" letter-spacing="-2.3">
+    <tspan fill="#141414">ati</tspan><tspan fill="#EE3B34">Windykacja</tspan>
+  </text>
+</svg>
