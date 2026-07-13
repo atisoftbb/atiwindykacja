@@ -143,17 +143,21 @@ const asset = (p) => (base.endsWith("/") ? base : base + "/") + p.replace(/^\//,
             chev: (directSpans[directSpans.length - 1] as HTMLElement) || null,
           };
         });
+        // Projekt zwija pozycje przez max-height:0 (overflow:hidden) — przełączamy max-height, nie display
         const setState = (o: (typeof items)[number], open: boolean) => {
-          if (o.ans) o.ans.style.display = open ? "block" : "none";
+          if (o.ans)
+            o.ans.style.maxHeight = open ? o.ans.scrollHeight + 40 + "px" : "0px";
           if (o.chev) o.chev.textContent = open ? "–" : "+";
         };
+        const isOpen = (o: (typeof items)[number]) =>
+          !!o.ans && o.ans.style.maxHeight !== "0px" && o.ans.style.maxHeight !== "";
         items.forEach((o, i) => {
           o.btn.style.cursor = "pointer";
           setState(o, i === 0);
           o.btn.addEventListener("click", () => {
-            const isOpen = o.ans?.style.display !== "none";
+            const willOpen = !isOpen(o);
             items.forEach((x) => setState(x, false));
-            setState(o, !isOpen);
+            setState(o, willOpen);
           });
         });
       }
